@@ -1,0 +1,28 @@
+# Local tooling and caches
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Local database — the container uses the mounted volume instead
+*.db
+*.db-journal
+
+# Secrets — supplied at runtime via compose env_file
+.env
+.env.local
+
+# Version control and editor state
+.git/
+.gitignore
+.claude/
+
+# Not part of the backend image
+frontend/
+tasks/
+*.pdf
+Dockerfile
+.dockerignore
+docker-compose.yml
